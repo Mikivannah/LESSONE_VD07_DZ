@@ -9,7 +9,7 @@ def get_quote():
     data = response.json()
     quote = data['content']
     author = data['author']
-    return render_template('quote.html', quote=quote, author=author)
+    return render_template('index.html', quote=quote, author=author)
 
 if __name__ == '__main__':
     app.run(debug=True)
